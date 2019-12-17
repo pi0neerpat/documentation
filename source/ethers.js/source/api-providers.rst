@@ -648,10 +648,10 @@ an array of topics
 Waiting for Transactions
 ------------------------
 
-:sup:`prototype` . waitForTransaction ( transactionHash ) |nbsp| :sup:`=>` |nbsp| :sup:`Promise<TransactionReceipt>`
+:sup:`prototype` . waitForTransaction ( transactionHash [, confirmations ] ) |nbsp| :sup:`=>` |nbsp| :sup:`Promise<TransactionReceipt>`
     Return a :ref:`Promise <promise>` which resolves to the
     :ref:`Transaction Receipt <transaction-receipt>` once *transactionHash* is
-    mined.
+    mined, with an optional number of block confirmations to wait before resolving.
 
 .. code-block:: javascript
     :caption: *new blocks*
